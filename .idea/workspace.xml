@@ -2,31 +2,83 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b34899ae-562b-4ffb-836b-202da6e094c9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/api.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Core/Database/Migrations/2021_05_24_135538_create_customers_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Core/Database/Migrations/2021_05_24_135538_create_customers_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Core/Database/Seeders/CoreDatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Core/Database/Seeders/CoreDatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Core/Entities/Customer.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Core/Entities/Customer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Core/Http/Controllers/CustomerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Core/Http/Controllers/CustomerController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Core/Http/Requests/CustomerStoreRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Core/Http/Requests/CustomerStoreRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Core/Routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Core/Routes/api.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Core/Transformers/CustomerResource.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Core/Transformers/CustomerResource.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/cors.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/cors.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Core/Config/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Core/Config/config.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Core/Console/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Core/Database/Migrations/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Core/Database/Migrations/2021_05_24_135538_create_customers_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Core/Database/Seeders/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Core/Database/Seeders/CoreDatabaseSeeder.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Core/Database/Seeders/CustomerSeederTableSeeder.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Core/Database/factories/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Core/Entities/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Core/Entities/Customer.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Core/Http/Controllers/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Core/Http/Controllers/CoreController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Core/Http/Controllers/CustomerController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Core/Http/Middleware/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Core/Http/Requests/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Core/Http/Requests/CustomerStoreRequest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Core/Providers/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Core/Providers/CoreServiceProvider.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Core/Providers/RouteServiceProvider.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Core/Resources/assets/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Core/Resources/assets/js/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Core/Resources/assets/sass/app.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Core/Resources/lang/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Core/Resources/views/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Core/Resources/views/index.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Core/Resources/views/layouts/master.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Core/Routes/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Core/Routes/api.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Core/Routes/web.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Core/Tests/Feature/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Core/Tests/Unit/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Core/Transformers/CustomerResource.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Core/Transformers/CustomerResourceCollection.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Core/composer.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Core/module.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Core/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Core/webpack.mix.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_200000_add_two_factor_columns_to_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_200000_add_two_factor_columns_to_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules_statuses.json" beforeDir="false" afterPath="$PROJECT_DIR$/modules_statuses.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/InstalledVersions.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/InstalledVersions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_files.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_files.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/installed.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -142,6 +194,18 @@
       <path value="$PROJECT_DIR$/vendor/league/commonmark" />
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php72" />
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/vendor/symfony/filesystem" />
+      <path value="$PROJECT_DIR$/vendor/seld/jsonlint" />
+      <path value="$PROJECT_DIR$/vendor/seld/phar-utils" />
+      <path value="$PROJECT_DIR$/vendor/barryvdh/laravel-ide-helper" />
+      <path value="$PROJECT_DIR$/vendor/barryvdh/reflection-docblock" />
+      <path value="$PROJECT_DIR$/vendor/react/promise" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/event-manager" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/deprecations" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/cache" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/dbal" />
+      <path value="$PROJECT_DIR$/vendor/justinrainbow/json-schema" />
+      <path value="$PROJECT_DIR$/vendor/spatie/laravel-query-builder" />
     </include_path>
   </component>
   <component name="ProjectId" id="1xDqg4wJa4bWKtYPfSVAr3gZB1l" />
@@ -155,10 +219,19 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="app.teamhub.trackedBranches" value="1uhcp1/main" />
+    <property name="app.teamhub.trackedBranches" value="-14fhm5s/main" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\aaaaaaa\jobslk_be\Modules\Admin\Http\Requests\Category" />
+      <recent name="F:\aaaaaaa\jobslk_be\Modules\Admin\Http\Requests\JobType" />
+      <recent name="F:\aaaaaaa\jobslk_be\Modules\Admin\Http\Requests\User" />
+      <recent name="F:\aaaaaaa\jobslk_be\Modules\Admin\Http\Requests\Vacancy" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -175,10 +248,26 @@
       <option name="presentableId" value="Default" />
       <updated>1629900115420</updated>
       <workItem from="1629900117319" duration="1993000" />
+      <workItem from="1629909296529" duration="655000" />
+      <workItem from="1629909967938" duration="146000" />
+      <workItem from="1629910155780" duration="6691000" />
+      <workItem from="1629963179164" duration="2648000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

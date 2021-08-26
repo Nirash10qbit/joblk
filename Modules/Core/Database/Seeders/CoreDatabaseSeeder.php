@@ -14,6 +14,15 @@ class CoreDatabaseSeeder extends Seeder
      */
     public function run()
     {
-            $this->call(CustomerSeederTableSeeder::class);
+        Model::unguard();
+
+        $this->call([
+            FileTableSeeder::class,
+            CategoryTableSeeder::class,
+            DistrictTableSeeder::class,
+            JobTypeTableSeeder::class,
+            UserTableSeeder::class,
+            VacancyTableSeeder::class,
+        ]);
     }
 }
