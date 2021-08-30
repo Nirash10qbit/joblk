@@ -1,7 +1,5 @@
 <?php
 
-use Illuminate\Http\Request;
-
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -13,6 +11,25 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
-});
+use Modules\User\Http\Controllers\CategoryController;
+use Modules\User\Http\Controllers\DistrictCityController;
+use Modules\User\Http\Controllers\DistrictController;
+use Modules\User\Http\Controllers\JobTypeController;
+use Modules\User\Http\Controllers\VacancyController;
+
+Route::get('/categories', [CategoryController::class, 'index']);
+Route::get('/categories/{id}', [CategoryController::class, 'show']);
+
+
+Route::get('/districts', [DistrictController::class, 'index']);
+Route::get('/districts/{id}', [DistrictController::class, 'show']);
+
+Route::get('/cities', [DistrictCityController::class, 'index']);
+Route::get('/cities/{id}', [DistrictCityController::class, 'show']);
+
+Route::get('/jobTypes', [JobTypeController::class, 'index']);
+Route::get('/jobTypes/{id}', [JobTypeController::class, 'show']);
+
+Route::get('/vacancies', [VacancyController::class, 'index']);
+Route::get('/vacancies/{id}', [VacancyController::class, 'show']);
+

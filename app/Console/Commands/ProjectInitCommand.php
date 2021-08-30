@@ -3,7 +3,6 @@
 namespace App\Console\Commands;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Console\Command;
-
 class ProjectInitCommand extends Command
 {
     /**
