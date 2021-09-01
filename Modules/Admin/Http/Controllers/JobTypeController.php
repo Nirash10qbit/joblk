@@ -4,7 +4,9 @@ namespace Modules\Admin\Http\Controllers;
 
 use App\Http\Resources\DataResource;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;
+use Illuminate\Http\Resources\Json\JsonResource;
 use Illuminate\Routing\Controller;
+use Modules\Admin\Http\Requests\Category\CategoryCreateRequest;
 use Modules\Admin\Http\Requests\JobType\JobTypeCreateRequest;
 use Modules\Admin\Http\Requests\JobType\JobTypeUpdateRequest;
 use Modules\Core\Entities\JobType;
@@ -17,7 +19,39 @@ class JobTypeController extends Controller
         $this->middleware('auth:sanctum');
         $this->middleware('admin.check');
     }
+    /**
+     * Display a listing of the resource.
+     * @return AnonymousResourceCollection
+     */
+    public function index(): AnonymousResourceCollection
+    {
+        $jobtypes = QueryBuilder::for(JobType::class)
+            ->paginate(10);
+        return DataResource::collection($jobtypes);
+    }
 
+
+    /**
+     * Show the specified resource.
+     * @param JobType $id
+     * @return DataResource
+     */
+    public function show(JobType $id): DataResource
+    {
+        JobType::whereId($id->id)->firstOrFail();
+        return new DataResource($id);
+    }
+
+    /**
+     * Store a newly created resource in storage.
+     * @param JobTypeCreateRequest $request
+     * @return DataResource
+     */
+    public function store(JobTypeCreateRequest $request): DataResource
+    {
+        $category = JobType::create($request->validated());
+        return new DataResource($category);
+    }
 
     /**
      * Update the specified resource in storage.

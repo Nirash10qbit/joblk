@@ -3,6 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="b34899ae-562b-4ffb-836b-202da6e094c9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Admin/Http/Controllers/JobTypeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Admin/Http/Controllers/JobTypeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Admin/Http/Requests/JobType/JobTypeCreateRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Admin/Http/Requests/JobType/JobTypeCreateRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Core/Database/Seeders/VacancyTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Core/Database/Seeders/VacancyTableSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/User/Http/Controllers/VacancyController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/User/Http/Controllers/VacancyController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -164,7 +168,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="app.teamhub.trackedBranches" value="-14fhm5s/main" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Jobs-LK-FE" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -203,7 +207,10 @@
       <workItem from="1629971507344" duration="5877000" />
       <workItem from="1629988922535" duration="2884000" />
       <workItem from="1630292213920" duration="2150000" />
-      <workItem from="1630337919761" duration="2458000" />
+      <workItem from="1630337919761" duration="4105000" />
+      <workItem from="1630383065089" duration="3110000" />
+      <workItem from="1630417878406" duration="5552000" />
+      <workItem from="1630467497509" duration="4222000" />
     </task>
     <servers />
   </component>
