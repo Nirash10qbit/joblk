@@ -19,6 +19,7 @@ class VacancyController extends Controller
     public function index(): AnonymousResourceCollection
     {
         $vacancies = QueryBuilder::for(Vacancy::class)
+            ->allowedFilters(['category.name','district.name','city.name','jobs.name'])
             ->with(['category','district','cities','jobs','files'])
             ->paginate(10);
         return DataResource::collection($vacancies);
