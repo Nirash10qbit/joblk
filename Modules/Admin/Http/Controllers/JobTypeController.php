@@ -11,6 +11,7 @@ use Modules\Admin\Http\Requests\JobType\JobTypeCreateRequest;
 use Modules\Admin\Http\Requests\JobType\JobTypeUpdateRequest;
 use Modules\Core\Entities\JobType;
 use Spatie\QueryBuilder\QueryBuilder;
+use Illuminate\Http\Request;
 
 class JobTypeController extends Controller
 {
@@ -23,10 +24,10 @@ class JobTypeController extends Controller
      * Display a listing of the resource.
      * @return AnonymousResourceCollection
      */
-    public function index(): AnonymousResourceCollection
+    public function index(Request $request): AnonymousResourceCollection
     {
         $jobtypes = QueryBuilder::for(JobType::class)
-            ->paginate(10);
+            ->paginate($request->input('per_page'));
         return DataResource::collection($jobtypes);
     }
 

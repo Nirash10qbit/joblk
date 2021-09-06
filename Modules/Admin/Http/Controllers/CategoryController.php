@@ -26,8 +26,8 @@ class CategoryController extends Controller
      */
     public function index(): AnonymousResourceCollection
     {
-        $categories = QueryBuilder::for(Category::class)
-            ->paginate(10);
+        $categories = QueryBuilder::for(Category::class);
+//            ->paginate(10);
         return DataResource::collection($categories);
     }
 

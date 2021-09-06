@@ -11,13 +11,13 @@ class ApproveCheckMiddleware
     /**
      * Handle an incoming request.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \Closure  $next
+     * @param Request $request
+     * @param Closure $next
      * @return mixed
      */
     public function handle(Request $request, Closure $next)
     {
-        if(Auth::vacancies()->approved_by_id){
+        if(Auth::vacancy()->is_approved){
             return response()->json(["message" => "Invalid Access"], 403);
         }
         return $next($request);

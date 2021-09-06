@@ -12,6 +12,13 @@ use Spatie\QueryBuilder\QueryBuilder;
 
 class VacancyController extends Controller
 {
+
+    public function __construct()
+    {
+       // $this->middleware('approved.check');
+    }
+
+
     /**
      * Display a listing of the resource.
      * @return AnonymousResourceCollection
@@ -33,7 +40,9 @@ class VacancyController extends Controller
      */
     public function show(Vacancy $id): DataResource
     {
-        Vacancy::whereId($id->id)->firstOrFail();
-        return new DataResource($id);
+        $vacancy = Vacancy::whereId($id->id)
+            ->with(['category','district','cities','jobs','files'])
+            ->firstOrFail();
+        return new DataResource($vacancy);
     }
 }

@@ -3,7 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="b34899ae-562b-4ffb-836b-202da6e094c9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Core/Database/Seeders/DistrictTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Core/Database/Seeders/DistrictTableSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Admin/Http/Controllers/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Admin/Http/Controllers/CategoryController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Admin/Http/Controllers/JobTypeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Admin/Http/Controllers/JobTypeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/User/Http/Controllers/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/User/Http/Controllers/CategoryController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/User/Http/Controllers/VacancyController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/User/Http/Controllers/VacancyController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/ApproveCheckMiddleware.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/ApproveCheckMiddleware.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -165,7 +170,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="app.teamhub.trackedBranches" value="-14fhm5s/main" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Test-FE" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -207,7 +212,16 @@
       <workItem from="1630337919761" duration="4105000" />
       <workItem from="1630383065089" duration="3110000" />
       <workItem from="1630417878406" duration="5552000" />
-      <workItem from="1630467497509" duration="9042000" />
+      <workItem from="1630467497509" duration="9693000" />
+      <workItem from="1630490663263" duration="3304000" />
+      <workItem from="1630511570534" duration="3495000" />
+      <workItem from="1630516396334" duration="634000" />
+      <workItem from="1630556685848" duration="9460000" />
+      <workItem from="1630652459709" duration="6237000" />
+      <workItem from="1630723426499" duration="5513000" />
+      <workItem from="1630824623577" duration="4679000" />
+      <workItem from="1630851113952" duration="844000" />
+      <workItem from="1630897922848" duration="4437000" />
     </task>
     <servers />
   </component>
