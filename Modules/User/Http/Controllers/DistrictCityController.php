@@ -19,7 +19,7 @@ class DistrictCityController extends Controller
     public function index(): AnonymousResourceCollection
     {
         $district_cities = QueryBuilder::for(DistrictCity::class)
-            ->paginate(30);
+            ->paginate(200);
         return DataResource::collection($district_cities);
     }
 

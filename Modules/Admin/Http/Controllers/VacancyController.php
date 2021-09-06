@@ -7,6 +7,7 @@ use App\Http\Resources\DataResource;
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;
+use Illuminate\Http\Resources\Json\JsonResource;
 use Illuminate\Routing\Controller;
 use Modules\Admin\Http\Requests\Vacancy\VacancyUpdateRequest;
 use Modules\Core\Entities\Vacancy;
@@ -24,9 +25,11 @@ class VacancyController extends Controller
      * Display a listing of the resource.
      * @return AnonymousResourceCollection
      */
-    public function index():AnonymousResourceCollection
+    public function index(): AnonymousResourceCollection
     {
         $vacancies = QueryBuilder::for(Vacancy::class)
+            ->allowedFilters(['category.name','district.name','city.name','jobs.name'])
+            ->with(['category','district','cities','jobs','files'])
             ->paginate(10);
         return DataResource::collection($vacancies);
     }
@@ -37,11 +40,14 @@ class VacancyController extends Controller
      * @param Vacancy $id
      * @return DataResource
      */
-    public function show(Vacancy $id):DataResource
+    public function show(Vacancy $id): DataResource
     {
-       Vacancy::whereId($id->id)->firstOrFail();
-       return new DataResource($id);
+        $vacancy = Vacancy::whereId($id->id)
+            ->with(['category','district','cities','jobs','files'])
+            ->firstOrFail();
+        return new DataResource($vacancy);
     }
+
 
     /**
      * Update the specified resource in storage.

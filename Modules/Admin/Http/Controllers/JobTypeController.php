@@ -24,23 +24,23 @@ class JobTypeController extends Controller
      * Display a listing of the resource.
      * @return AnonymousResourceCollection
      */
-    public function index(Request $request): AnonymousResourceCollection
+    public function index(): AnonymousResourceCollection
     {
         $jobtypes = QueryBuilder::for(JobType::class)
-            ->paginate($request->input('per_page'));
+            ->paginate(100);
         return DataResource::collection($jobtypes);
     }
 
 
     /**
      * Show the specified resource.
-     * @param JobType $id
+     * @param JobType $jobType
      * @return DataResource
      */
-    public function show(JobType $id): DataResource
+    public function show(JobType $jobType): DataResource
     {
-        JobType::whereId($id->id)->firstOrFail();
-        return new DataResource($id);
+        JobType::whereId($jobType->id)->firstOrFail();
+        return new DataResource($jobType);
     }
 
     /**

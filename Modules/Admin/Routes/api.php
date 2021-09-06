@@ -19,7 +19,7 @@ Route::prefix('/admin')->group(function(){
 
     Route::apiResource('/categories','CategoryController');
 
-    Route::apiResource('/job_types','JobTypeController');
+    Route::apiResource('/jobTypes','JobTypeController');
 
     Route::get('/users',[UserController::class,'index']);
     Route::get('/users/{id}',[UserController::class,'show']);
