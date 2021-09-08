@@ -7,6 +7,7 @@ use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;
 use Illuminate\Routing\Controller;
+use Modules\Core\Entities\District;
 use Modules\Core\Entities\DistrictCity;
 use Spatie\QueryBuilder\QueryBuilder;
 
@@ -14,26 +15,28 @@ class DistrictCityController extends Controller
 {
     /**
      * Display a listing of the resource.
-     * @return Renderable
+     * @param District $district
+     * @return AnonymousResourceCollection
      */
-    public function index(): AnonymousResourceCollection
+    public function index(District $district) :AnonymousResourceCollection
     {
-        $district_cities = QueryBuilder::for(DistrictCity::class)
-            ->paginate(200);
-        return DataResource::collection($district_cities);
+        $cities = QueryBuilder::for($district->cities())
+            ->when(request('district_id','')!= '', function ($query){$query->where('district_id',request('district_id'));})
+            ->paginate(50);
+        return DataResource::collection($cities);
     }
 
 
     /**
      * Show the specified resource.
-     * @param DistrictCity $id
+     * @param DistrictCity $city
+     *
      * @return DataResource
      */
-    public function show(DistrictCity $id): DataResource
+    public function show(DistrictCity $city) : DataResource
     {
-        DistrictCity::whereId($id->id)->firstOrFail();
-        return new DataResource($id);
+        DistrictCity::whereId($city->id)->firstOrFail();
+        return new DataResource($city);
     }
-
 
 }

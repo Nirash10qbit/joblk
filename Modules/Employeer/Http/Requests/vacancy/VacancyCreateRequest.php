@@ -24,9 +24,9 @@ class vacancyCreateRequest extends FormRequest
             "employee_name"=> 'required',
             "employee_email"=> 'required',
             "telephone"=> 'required',
-            "deadline_date" =>'required',
-            "description"=> 'required',
-            "cv_image"=> 'required',
+//            "deadline_date" =>'required',
+             "description"=> 'required',
+//            "cv_image"=> 'required',
         ];
     }
 

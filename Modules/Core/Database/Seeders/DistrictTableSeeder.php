@@ -643,6 +643,7 @@ class DistrictTableSeeder extends Seeder
             [
                 "name" => "Work from Home",
                 "city" => [
+                    ["name" => "Home"],
                 ],
             ],
 

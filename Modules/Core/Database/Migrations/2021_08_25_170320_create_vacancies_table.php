@@ -26,7 +26,7 @@ class CreateVacanciesTable extends Migration
             $table->string('employee_email');
             $table->string('telephone');
             $table->date('deadline_date')->nullable();
-            $table->text('description');
+            $table->text('description')->nullable();
             $table->foreignId('cv_image')->nullable()->references('id')->on('files');
             $table->json('data')->nullable();
             $table->boolean('is_approved')->default(false);
