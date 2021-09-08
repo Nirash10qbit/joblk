@@ -90,6 +90,5 @@ class Kernel extends HttpKernel
         'verified' => EnsureEmailIsVerified::class,
         'admin.check' => AdminCheckMiddlware::class,
         'employee.check' => EmployeeCheckMiddlware::class,
-        'approved.check' => ApproveCheckMiddleware::class
     ];
 }

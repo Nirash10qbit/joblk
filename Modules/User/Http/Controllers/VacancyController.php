@@ -6,19 +6,10 @@ use App\Http\Resources\DataResource;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;
 use Illuminate\Routing\Controller;
 use Modules\Core\Entities\Vacancy;
-use Modules\Core\Entities\Category;
-use Modules\Core\Entities\JobType;
 use Spatie\QueryBuilder\QueryBuilder;
 
 class VacancyController extends Controller
 {
-
-    public function __construct()
-    {
-       // $this->middleware('approved.check');
-    }
-
-
     /**
      * Display a listing of the resource.
      * @return AnonymousResourceCollection
@@ -26,8 +17,11 @@ class VacancyController extends Controller
     public function index(): AnonymousResourceCollection
     {
         $vacancies = QueryBuilder::for(Vacancy::class)
-            ->allowedFilters(['category.name','district.name','city.name','jobs.name'])
-            ->with(['category','district','cities','jobs','files'])
+            ->when(request('category_id','')!= '', function ($query){$query->where('category_id',request('category_id'));})
+            ->when(request('job_type_id','')!= '', function ($query){$query->where('job_type_id',request('job_type_id'));})
+            ->when(request('district_id','')!= '', function ($query){$query->where('district_id',request('district_id'));})
+            ->with(['category', 'district', 'cities', 'jobs', 'files'])
+            ->where( 'is_approved', 1)
             ->paginate(10);
         return DataResource::collection($vacancies);
     }
@@ -41,7 +35,7 @@ class VacancyController extends Controller
     public function show(Vacancy $id): DataResource
     {
         $vacancy = Vacancy::whereId($id->id)
-            ->with(['category','district','cities','jobs','files'])
+            ->with(['category', 'district', 'cities', 'jobs', 'files'])
             ->firstOrFail();
         return new DataResource($vacancy);
     }
