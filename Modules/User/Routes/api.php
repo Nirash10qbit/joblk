@@ -14,6 +14,7 @@
 use Modules\User\Http\Controllers\CategoryController;
 use Modules\User\Http\Controllers\DistrictCityController;
 use Modules\User\Http\Controllers\DistrictController;
+use Modules\User\Http\Controllers\FileController;
 use Modules\User\Http\Controllers\JobTypeController;
 use Modules\User\Http\Controllers\VacancyController;
 
@@ -32,4 +33,7 @@ Route::get('/jobTypes/{id}', [JobTypeController::class, 'show']);
 
 Route::get('/vacancies', [VacancyController::class, 'index']);
 Route::get('/vacancies/{id}', [VacancyController::class, 'show']);
+
+Route::get('/files', [FileController::class, 'index']);
+Route::get('/files/{id}', [FileController::class, 'show']);
 

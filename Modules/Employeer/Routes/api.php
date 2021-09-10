@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Http\Request;
+use Modules\Employeer\Http\Controllers\FileController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,5 +17,8 @@ use Illuminate\Http\Request;
 Route::prefix('/employee')->group(function() {
 
     Route::apiResource('/vacancies', 'VacancyController');
+
+    Route::get('/files', [FileController::class, 'index']);
+    Route::get('/files/{id}', [FileController::class, 'show']);
 
 });
