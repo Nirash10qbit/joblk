@@ -1,0 +1,13 @@
+{
+    "name": "FileController",
+    "alias": "filecontroller",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\FileController\\Providers\\FileControllerServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

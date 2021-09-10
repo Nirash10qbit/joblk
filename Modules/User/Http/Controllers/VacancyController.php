@@ -22,6 +22,7 @@ class VacancyController extends Controller
             ->when(request('district_id','')!= '', function ($query){$query->where('district_id',request('district_id'));})
             ->with(['category', 'district', 'cities', 'jobs', 'files'])
             ->where( 'is_approved', 1)
+            ->orderBy('id', 'desc')
             ->paginate(10);
         return DataResource::collection($vacancies);
     }

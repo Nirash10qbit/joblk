@@ -26,7 +26,7 @@ class vacancyUpdateRequest extends FormRequest
             "telephone"=> 'required',
             "deadline_date" => 'required',
             "description"=> 'required',
-            "cv_image"=> 'required',
+           // "cv_image"=> 'required',
         ];
     }
 

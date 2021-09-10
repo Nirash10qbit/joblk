@@ -2,5 +2,7 @@
     "Core": true,
     "Admin": true,
     "User": true,
-    "Employeer": true
+    "Employeer": true,
+    "Controller": true,
+    "FileController": true
 }
